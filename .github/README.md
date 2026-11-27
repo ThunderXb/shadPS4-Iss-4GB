@@ -195,7 +195,7 @@ game folder, delete `shadps4-game.txt` next to `shadPS4.exe` and choose the fold
 <summary><b>Crashes, wrong textures or out of video memory (AMD, Intel, older cards)</b></summary>
 
 Put `SHADPS4_A2=0` into `shadps4-flags-user.txt` (the multithreaded renderer off - slower, but closest to standard
-shadPS4), then [open an issue](https://github.com/axylpup/shadPS4/issues/new/choose) with your logs.
+shadPS4), then [open an issue](https://github.com/ThunderXb/shadPS4-Iss-4GB/issues/new/choose) with your logs.
 </details>
 
 <details>
