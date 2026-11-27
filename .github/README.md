@@ -294,7 +294,7 @@ What changed in each version is on the [Releases](https://github.com/ThunderXb/s
 
 ## Found a problem?
 
-[Open an issue](https://github.com/axylpup/shadPS4/issues/new/choose) and attach `user\log\shad_log.txt` (and
+[Open an issue](https://github.com/ThunderXb/shadPS4-Iss-4GB/issues/new/choose) and attach `user\log\shad_log.txt` (and
 `user\log\fatal.txt` after a crash). The form asks for your graphics card, CPU and what you were doing. This page is
 for this build only - problems with other games or the official shadPS4 builds belong on
 [shadPS4's own page](https://github.com/shadps4-emu/shadPS4).
