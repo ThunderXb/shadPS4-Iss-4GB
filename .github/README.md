@@ -8,17 +8,20 @@ GitHub shows .github/README.md before the root README.md, so upstream's README.m
 
 <div align="center">
 
-# inFAMOUS Second Son on PC
+# inFAMOUS Second Son on PC - 4GB VRAM Release
+
+**#Important: This is based on Axylpup's ShadPS4 release v1.1.1**
+### [Axylpup-ShadPS4 Repo](https://github.com/axylpup/shadPS4)
 
 **A build of the [shadPS4](https://github.com/shadps4-emu/shadPS4) PlayStation 4 emulator, tuned for one game.**<br>
 High frame rates, DLSS, native 4K and ultrawide, real mouse aiming and a full keyboard layout, on Windows.
 
-[![Latest build](https://img.shields.io/github/v/release/axylpup/shadPS4?label=latest%20build&style=for-the-badge)](https://github.com/axylpup/shadPS4/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/axylpup/shadPS4/total?style=for-the-badge)](https://github.com/axylpup/shadPS4/releases)
+### [Download the latest build](https://github.com/ThunderXb/shadPS4-Iss-4GB/releases/tag/second-son-4gb-v1)
 
-### [Download the latest build](https://github.com/axylpup/shadPS4/releases/latest)
+Windows 10 / 11. **You need your own copy of the game** - no game files are included.
 
-Windows 10 / 11, one zip of about 74 MB. **You need your own copy of the game** - no game files are included.
+> All features, controls and everything comes from Axylpup and remains unchanged.
+> Below everything is recorded as per Axylpup's testing. 
 
 **[Features](#features) · [Getting started](#getting-started) · [FAQ](#faq) · [Controls](#controls) · [DLSS](#dlss-optional) · [Known issues](#known-issues)**
 
@@ -33,16 +36,9 @@ Windows 10 / 11, one zip of about 74 MB. **You need your own copy of the game** 
 > shadPS4 team. Tested with the EU version (CUSA00004, update 1.07); the US version (CUSA00223) gets the same
 > settings - reports welcome.
 
-> [!TIP]
-> **1.1.1 (hotfix):** video cutscenes now fit ultrawide screens with black bars instead of being cut off; fixes for
-> crashes at start (game version 01.00 - install update 1.07), on the loading screen (12 GB cards), on some AMD cards
-> and under Linux / Proton. **HDR is experimental - keep it off for now** (F3 -> Graphics -> Enable HDR); proper HDR
-> with DLSS comes in 1.2. [All changes](https://github.com/axylpup/shadPS4/releases/latest).
->
-> **New in 1.1:** any screen shape (ultrawide 21:9 / 32:9, 16:10, 4:3), the render size as a percentage of your
-> screen changed live, native 4K, sharper DLSS without the wobble, far fewer stripes in street reflections, even motion
-> on screens without G-Sync / FreeSync, a Quick settings tab, and the loading screen tells you when a new version is
-> out. [All changes](https://github.com/axylpup/shadPS4/releases/latest).
+> [!NOTE]
+> This specific build was tested on RTX 3060 (6GB VRAM)/16GB RAM as well as on GTX 1650 (4GB VRAM)/16GB RAM. It works
+> on all other GPU listed as per Axylpup.
 
 ## Features
 
@@ -94,7 +90,7 @@ Everything below is in the download, set up for this game - no tweaking needed.
 
 ## Getting started
 
-1. Download the zip from the [latest release](https://github.com/axylpup/shadPS4/releases/latest) and unzip it
+1. Download the zip from the [latest release](https://github.com/ThunderXb/shadPS4-Iss-4GB/releases) and unzip it
    anywhere.
 2. Run `shadPS4.exe` and pick your game folder (the one with `eboot.bin`). It remembers it.
 3. The first start prepares shaders (one time, with a progress screen). Then play.
@@ -102,11 +98,6 @@ Everything below is in the download, set up for this game - no tweaking needed.
 A DualSense / DualShock 4 works as on the console. All keys, the special sections (<kbd>T</kbd> = touchpad,
 <kbd>X</kbd> = motion sensor), changing settings and more questions are in the README inside the zip and in the
 [FAQ](#faq) below; `shadps4-flags-user-EXAMPLES.txt` lists the settings players usually want.
-
-> [!TIP]
-> **Updating:** unzip the new version over your old folder and replace the files. Saves, settings, keys, DLSS files
-> and your own `shadps4-flags-user.txt` stay. The first start prepares shaders once more. The loading screen tells you
-> when a new version is out.
 
 ## FAQ
 
