@@ -37,7 +37,7 @@ Windows 10 / 11. **You need your own copy of the game** - no game files are incl
 > settings - reports welcome.
 
 > [!NOTE]
-> This specific build was tested on RTX 3060 (6GB VRAM)/16GB RAM as well as on GTX 1650 (4GB VRAM)/16GB RAM. It works
+> This specific build was tested on RTX 3060 (6GB VRAM)/16GB RAM as well as on GTX 1650 (4GB VRAM)/16GB RAM (Mobile GPU). Also it works
 > on all other GPU listed as per Axylpup.
 
 ## Features
@@ -260,13 +260,12 @@ NVIDIA's files are not included (licence). Adding them takes about 2 minutes:
 
 ## Requirements
 
-- Windows 10 / 11 64-bit, a Vulkan 1.3 graphics card (12 GB video memory recommended; 8 GB runs since 1.0.2, smaller
-  cards can lower the render size), a fast 6+ core CPU.
+- Windows 10 / 11 64-bit, a Vulkan 1.3 graphics card (12 GB video memory recommended; 8 GB runs since 1.0.2, 4 GB runs on this build), a fast 6+ core CPU.
 - DLSS: an NVIDIA RTX card (20 series or newer) and a recent driver.
 - Other hardware should work (every new feature has a fallback) but only the test PC below is tested - reports
   welcome.
 
-**The test PC** - every number on this page comes from it:
+**The Axylpup test PC** - every number on this page comes from it:
 
 | Part | Model |
 |---|---|
@@ -291,7 +290,7 @@ Real bugs that are not fixed yet (stutter, language, saves and other questions w
 - Some heavy views (for example the first karma choice) sometimes run at about half their usual frame rate;
   reloading usually brings it back.
 
-What changed in each version is on the [Releases](https://github.com/axylpup/shadPS4/releases) page.
+What changed in each version is on the [Releases](https://github.com/ThunderXb/shadPS4-Iss-4GB/releases) page.
 
 ## Found a problem?
 
