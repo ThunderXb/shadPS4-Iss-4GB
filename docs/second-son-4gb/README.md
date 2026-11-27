@@ -11,7 +11,7 @@ This is a small, focused fork of `axylpup/shadPS4` (branch `second-son`, commit 
 
 ## Recommended runtime flags
 
-`shadps4-flags.txt` and `shadps4-flags-user.txt` are included in the binary ZIP and in this folder. Put both next to `shadPS4.exe`.
+`shadps4-flags.txt`, `shadps4-flags-user.txt` and `shadps4-flags-user-EXAMPLES.txt` are included in the binary ZIP and in this folder. Put the first two next to `shadPS4.exe`; the examples file lists optional settings to copy from.
 
 The user flags contain:
 
@@ -40,6 +40,10 @@ Environment variables already set by a launcher override the values in these fil
 
    A launcher can be used instead, as long as it passes the same flags or leaves the flags files in place.
 
+## Update check
+
+The boot screen checks `github.com/ThunderXb/shadPS4-Iss-4GB/releases/latest` once per start and shows the result there. Nothing is downloaded. Set `SHADPS4_UPDATE_CHECK=0` to disable it.
+
 ## Test evidence
 
 Faithful `SHADPS4_SIM_VRAM_MB=4096` run after the final logic:
@@ -55,7 +59,7 @@ The release EXE was rebuilt from this exact source after the temporary diagnosti
 ## Binary ZIP contents
 
 - `shadPS4.exe`
-- `shadps4-flags.txt`, `shadps4-flags-user.txt`
+- `shadps4-flags.txt`, `shadps4-flags-user.txt`, `shadps4-flags-user-EXAMPLES.txt`
 - `defaults/`, `dlss/`, `tex_replace/`
 - empty `user/` runtime folders
 - `README.md`, `LICENSE`

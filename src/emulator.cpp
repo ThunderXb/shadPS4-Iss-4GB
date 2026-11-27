@@ -658,7 +658,7 @@ void Emulator::Run(std::filesystem::path file, std::vector<std::string> args,
         }
     }
     Common::StartProjectionFinder(); // SHADPS4_FIND_PROJ=1 diagnostic (aspect ratio work)
-    Common::StartUpdateNotice(); // 1.1: GitHub latest-release check (SHADPS4_UPDATE_CHECK=0 off)
+    Common::StartUpdateNotice(); // This fork's release check (SHADPS4_UPDATE_CHECK=0 off)
 
     if (auto icon = mnt->ReadFile("/app0/sce_sys/icon0.png")) {
         window->SetIcon(*icon);

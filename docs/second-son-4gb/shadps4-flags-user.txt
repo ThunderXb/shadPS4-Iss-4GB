@@ -1,5 +1,15 @@
 # inFAMOUS Second Son / 4 GB card - tested settings
 # Place this file next to shadPS4.exe. Environment variables override it.
+#
+# DO NOT CHANGE THESE FOR THE 4 GB FIX:
+#   SHADPS4_ASPECT=16:9             keeps subtitles/HUD on screen on 16:10 monitors
+#   SHADPS4_PERF_MODE=low           keeps render cost low enough for 4 GB
+#   SHADPS4_SCREEN_PERCENT=50       same
+#   SHADPS4_MESH_MAX_MB=2048        caps the mesh join; raising it can OOM
+#   SHADPS4_VRAM_AUTO=0             keep automatic texture budget off
+#   SHADPS4_VRAM_BUDGET_MB=2048     fixed texture budget
+# Also leave SHADPS4_MESH_HEADROOM_MB at its default (256 MB) and do not set
+# SHADPS4_MESH_HOST_FALLBACK=0; both bring back the old repeated-join/OOM behavior.
 
 # Keep subtitles and HUD on screen on 16:10 and other non-16:9 monitors.
 SHADPS4_ASPECT=16:9
@@ -15,10 +25,6 @@ SHADPS4_MESH_MAX_MB=2048
 # Fixed texture budget was more stable than automatic tracking in the faithful 4 GB test.
 SHADPS4_VRAM_AUTO=0
 SHADPS4_VRAM_BUDGET_MB=2048
-
-# The mesh buffer may fall back to system memory when video memory is full (default on).
-# Uncomment to restore the old out-of-video-memory assert for comparison:
-# SHADPS4_MESH_HOST_FALLBACK=0
 
 # Do not set SHADPS4_SIM_VRAM_MB here. It is only for simulating 4 GB on a larger test card;
 # a real 4 GB card reports its own budget and ignores it.

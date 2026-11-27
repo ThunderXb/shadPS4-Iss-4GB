@@ -79,9 +79,9 @@ void StartUpdateNotice() {
         httplib::Client cli("https://api.github.com");
         cli.set_connection_timeout(5);
         cli.set_read_timeout(5);
-        const httplib::Headers headers = {{"User-Agent", "shadPS4-second-son"},
+        const httplib::Headers headers = {{"User-Agent", "shadPS4-second-son-4gb"},
                                           {"Accept", "application/vnd.github+json"}};
-        const auto res = cli.Get("/repos/axylpup/shadPS4/releases/latest", headers);
+        const auto res = cli.Get("/repos/ThunderXb/shadPS4-Iss-4GB/releases/latest", headers);
         const auto no_answer = [&] {
             SetLine(fmt::format("Version {} - could not check for updates", ShortName(mine)));
         };
@@ -112,7 +112,7 @@ void StartUpdateNotice() {
         }
         LOG_INFO(Common, "UpdateCheck: {} is out (this build: {})", latest, mine);
         SetLine(fmt::format("Latest version: {} - New update out!", ShortName(latest)),
-                fmt::format("You have {}. Download: github.com/axylpup/shadPS4/releases",
+                fmt::format("You have {}. Download: github.com/ThunderXb/shadPS4-Iss-4GB/releases",
                             ShortName(mine)),
                 true);
         // The 45 s in-game notice is gone (user 10-21: it would interrupt the game); the boot

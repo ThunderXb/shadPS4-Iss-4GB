@@ -8,10 +8,11 @@
 namespace Common {
 
 /// The fork's release tag this build belongs to; the release checklist bumps it (ROADMAP).
-inline constexpr const char* ReleaseTag = "second-son-v1.1.1";
+inline constexpr const char* ReleaseTag = "second-son-4gb-v1";
 
-/// 1.1 (LATER-PLAN 17): one background request to GitHub's latest release of axylpup/shadPS4 at
-/// every start, shown on the boot screen (GetUpdateLine). Nothing is downloaded.
+/// One background request to this fork's latest release at
+/// github.com/ThunderXb/shadPS4-Iss-4GB on every start, shown on the boot screen
+/// (GetUpdateLine). Nothing is downloaded.
 /// SHADPS4_UPDATE_CHECK=0 turns it off.
 void StartUpdateNotice();
 
